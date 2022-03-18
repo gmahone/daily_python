@@ -6,3 +6,12 @@ def reverse_array(n):
 
 
 reverse_array(12345)
+
+
+#best solution
+def digitize(n):
+    return map(int, str(n)[::-1])
+
+#second best
+def digitize(n):
+    return [int(x) for x in str(n)[::-1]]
