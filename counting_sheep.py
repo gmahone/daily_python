@@ -10,3 +10,17 @@ def true_counter(arr):
 test_arr = [True, True, False, True, False, True]
 
 print(true_counter(test_arr))
+
+
+# other solutions
+def count_sheeps(arrayOfSheeps):
+  return arrayOfSheeps.count(True)
+
+
+def count_sheeps(array_of_sheep):
+  # TODO May the force be with you
+  count = 0
+  for sheep in array_of_sheep:
+      if sheep:
+          count += 1 
+  return count
