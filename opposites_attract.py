@@ -13,3 +13,17 @@ def lovefunc( flower1, flower2 ):
 print(lovefunc(5, 5))
 print(lovefunc(4,5))
 print(lovefunc(7,2))
+
+
+# other solutions
+
+def lovefunc( flower1, flower2 ):
+    return (flower1+flower2)%2
+
+def lovefunc(flower1, flower2):
+    return flower1 % 2 != flower2 % 2
+
+def lovefunc( flower1, flower2 ):
+    return (flower1 + flower2) % 2 == 1
+
+lovefunc=lambda a,b:(a+b)%2
