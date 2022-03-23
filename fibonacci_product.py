@@ -13,3 +13,16 @@ def productFib(prod):
           
 print(fibonacci_prod(714))
 print(fibonacci_prod(800))
+
+
+## other solutions
+
+def productFib(prod):
+  a, b = 0, 1
+  while prod > a * b:
+    a, b = b, a + b
+  return [a, b, prod == a * b]
+
+def productFib(prod):
+    func = lambda a, b: func(b, a+b) if a*b < prod else [a, b, a*b == prod]
+    return func(0, 1)
