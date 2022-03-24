@@ -22,3 +22,25 @@ def delete_nth(order,max_e):
                 loop_run = False
 
     return order
+
+
+# other solutions
+
+def delete_nth(order,max_e):
+    ans = []
+    for o in order:
+        if ans.count(o) < max_e: ans.append(o)
+    return ans
+
+def delete_nth(order, max_e):
+    d = {}
+    res = []
+    for item in order:
+      n = d.get(item, 0)
+      if n < max_e:
+        res.append(item)
+        d[item] = n+1
+    return res
+
+def delete_nth(order,max_e):
+    return [o for i,o in enumerate(order) if order[:i].count(o)<max_e ]
