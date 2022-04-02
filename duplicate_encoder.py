@@ -14,3 +14,33 @@ def duplicate_encode(word):
         else:
             out = out + "("
     return out
+
+
+# other solutions
+
+def duplicate_encode(word):
+    return "".join(["(" if word.lower().count(c) == 1 else ")" for c in word.lower()])
+
+def duplicate_encode(word):
+    word = word.upper()
+    result = ""
+    for char in word:
+        if word.count(char) > 1:
+            result += ")"
+        else:
+            result += "("
+    return result
+
+
+def duplicate_encode(word):
+    word = word.lower()
+    return ''.join('(' if word.count(x) == 1 else ')' for x in word)
+
+def duplicate_encode(word):
+    new_string = ""
+    word = word.lower()
+    
+    for char in word:
+        new_string += (")" if (word.count(char) > 1) else "(")
+            
+    return new_string
