@@ -1,7 +1,7 @@
 def nbMonths(startPriceOld, startPriceNew, savingperMonth, percentLossByMonth):
     i = 0
     savedThisMonth = 0
-    while (startPriceOld + savedThisMonth) <= startPriceNew:
+    while (startPriceOld + savedThisMonth) < startPriceNew:
         i += 1
         if i % 2 == 0:
             percentLossByMonth += 0.5
