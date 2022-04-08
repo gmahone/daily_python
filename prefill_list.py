@@ -97,3 +97,15 @@ def prefill(n, v = "abc"):
 
 # print(prefill(0, "abc"))
 # print(prefill(0.1, "abc"))
+
+
+
+def prefill(n, v):
+    if type(v) != list:
+        v = [v]
+    if len(v) >= n:
+        result = v
+    else:
+        v.append(v[0])
+        result = prefill(n, v)
+    return result
