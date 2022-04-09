@@ -41,3 +41,11 @@ def count_smileys(arr):
 
 
 count_smileys=lambda a:sum(s and s[0]in':;'and s[-1]in')D'and s[1:-1]in('','-','~')for s in a)
+
+
+import re
+def count_smileys(arr):
+    count = 0
+    for smiley in arr:
+        count += len(re.findall('[:;][-~]?[)D]', smiley))
+    return count
