@@ -38,3 +38,6 @@ def count_smileys(arr):
 def count_smileys(arr):
     smiles = set([a+b+c for a in ":;" for b in ['','-', '~'] for c in ")D"])
     return len([1 for s in arr if s in smiles])
+
+
+count_smileys=lambda a:sum(s and s[0]in':;'and s[-1]in')D'and s[1:-1]in('','-','~')for s in a)
