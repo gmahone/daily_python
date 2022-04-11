@@ -48,13 +48,14 @@ print(winner)
 # print(filtered_rank[0][0])
 
 
-def prize_draw(st, we, n):
+def rank(st, we, n):
+    print(len(st))
     if len(st) == 0:
         return "No participants"
-    if n > len(st):
-        return "Not enough participants"
     rank_list = []
-    name_list = str.split(",")
+    name_list = st.split(",")
+    if n > len(name_list):
+        return "Not enough participants"
     for i in range(0,len(name_list)):
         curr_name = name_list[i]
         word_value = len(curr_name)
