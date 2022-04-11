@@ -46,3 +46,24 @@ print(winner)
 # print(filtered_rank)
 # filtered_rank.sort(key=lambda tup: tup[0])
 # print(filtered_rank[0][0])
+
+
+def prize_draw(st, we, n):
+    if len(st) == 0:
+        return "No participants"
+    if n > len(st):
+        return "Not enough participants"
+    rank_list = []
+    name_list = str.split(",")
+    for i in range(0,len(name_list)):
+        curr_name = name_list[i]
+        word_value = len(curr_name)
+        for curr_letter in curr_name:
+            word_value += ord(curr_letter.upper())-64
+        rank_list.append((curr_name,word_value * we[i]))
+    rank_list.sort(key=lambda tup: tup[1], reverse=True)
+    print(rank_list)
+    filtered_rank = list(filter(lambda tup: tup[1] == rank_list[n-1][1], rank_list))
+    filtered_rank.sort(key=lambda tup: tup[0])
+    winner = filtered_rank[0][0]
+    return winner
