@@ -68,3 +68,5 @@ def rank(st, we, n):
     filtered_rank.sort(key=lambda tup: tup[0])
     winner = filtered_rank[0][0]
     return winner
+## need to sort first alphabetically then by rank, so ties will be adjudicated correctly
+## this would fix lines 67 and 68 in the above solution
