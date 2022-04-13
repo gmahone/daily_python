@@ -70,3 +70,26 @@ def rank(st, we, n):
     return winner
 ## need to sort first alphabetically then by rank, so ties will be adjudicated correctly
 ## this would fix lines 67 and 68 in the above solution
+
+def rank(st, we, n):
+    print(len(st))
+    if len(st) == 0:
+        return "No participants"
+    rank_list = []
+    name_list = st.split(",")
+    if n > len(name_list):
+        return "Not enough participants"
+    for i in range(0,len(name_list)):
+        curr_name = name_list[i]
+        word_value = len(curr_name)
+        for curr_letter in curr_name:
+            word_value += ord(curr_letter.upper())-64
+        rank_list.append((curr_name,word_value * we[i]))
+    rank_list.sort(key=lambda tup: tup[0], reverse=True)
+    rank_list.sort(key=lambda tup: tup[1], reverse=True)
+    winner = rank_list[n-1][0]
+    #print(rank_list)
+    #filtered_rank = list(filter(lambda tup: tup[1] == rank_list[n-1][1], rank_list))
+    #filtered_rank.sort(key=lambda tup: tup[0])
+    #winner = filtered_rank[0][0]
+    return winner
