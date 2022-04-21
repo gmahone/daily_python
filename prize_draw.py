@@ -97,3 +97,35 @@ def rank(st, we, n):
     #filtered_rank.sort(key=lambda tup: tup[0])
     #winner = filtered_rank[0][0]
     return winner
+
+
+# add other solutions
+
+def rank(st, we, n):
+    if not st:
+        return "No participants"
+    if n>len(we):
+        return "Not enough participants"
+    name_score = lambda name,w: w*(len(name)+sum([ord(c.lower())-96for c in name]))
+    scores= [name_score(s,we[i]) for i,s in enumerate(st.split(','))]
+    scores = list(zip(st.split(','),scores))    
+    scores.sort(key=lambda x: (-x[1],x[0]))
+    return scores[n-1][0]
+
+
+
+def win_num(name, weight):
+    return (len(name) + sum(ord(c)-96 for c in name.lower())) * weight
+
+def rank(st, we, n):
+    if not st:      return "No participants"
+    elif n>len(we): return "Not enough participants"
+    else:           return sorted((-win_num(s,w),s) for s,w in zip(st.split(","), we))[n-1][1]
+    
+    
+    
+def rank(st, we, n):
+    if not st: return "No participants"
+    st = st.split(',')
+    calc = lambda x: we[x[0]] * (len(x[1]) + sum(ord(m) - ord('a') + 1 for m in x[1].lower()))
+    return sorted(sorted([m for m in enumerate(st)], key=lambda x: x[1]), key=lambda m: calc(m), reverse=True)[n - 1][1] if len(st) >= n else "Not enough participants"
