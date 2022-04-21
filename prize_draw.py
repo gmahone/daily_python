@@ -89,7 +89,7 @@ def rank(st, we, n):
         for curr_letter in curr_name:
             word_value += ord(curr_letter.upper())-64
         rank_list.append((curr_name,word_value * we[i]))
-    rank_list.sort(key=lambda tup: tup[0], reverse=True)
+    rank_list.sort(key=lambda tup: tup[0], reverse=False)
     rank_list.sort(key=lambda tup: tup[1], reverse=True)
     winner = rank_list[n-1][0]
     #print(rank_list)
