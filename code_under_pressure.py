@@ -1,2 +1,2 @@
 def double_integer(i):
-    pass # Double the integer and return it!
+    return 2*i
