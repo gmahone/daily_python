@@ -29,3 +29,7 @@ def sort_by_length(arr):
     for i in tmp_list:
         result.append(i["item"])
     return result
+
+# add other solutions
+def sort_by_length(arr):
+    return sorted(arr, key=len)
