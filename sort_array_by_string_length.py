@@ -23,7 +23,7 @@ def extr_length(x):
 def sort_by_length(arr):
     tmp_list = []
     result = []
-    for i in test:
+    for i in arr:
         tmp_list.append({"item" : i, "length": len(i)})
     tmp_list.sort(key=extr_length)
     for i in tmp_list:
