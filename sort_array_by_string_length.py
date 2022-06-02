@@ -33,3 +33,8 @@ def sort_by_length(arr):
 # add other solutions
 def sort_by_length(arr):
     return sorted(arr, key=len)
+
+# sort key can be len() apparently
+def sort_by_length(arr):
+  arr.sort(key = len)
+  return arr
