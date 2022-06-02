@@ -45,3 +45,6 @@ def sort_by_length(arr):
     for word in arr:
         words[int(len(word))]=word
     return [words[key] for key in sorted(words.keys())]
+
+# lambda function solution
+sort_by_length = lambda a: sorted(a, key=len)
