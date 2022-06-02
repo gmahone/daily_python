@@ -38,3 +38,10 @@ def sort_by_length(arr):
 def sort_by_length(arr):
   arr.sort(key = len)
   return arr
+
+# interesting indexing solution
+def sort_by_length(arr):
+    words={}
+    for word in arr:
+        words[int(len(word))]=word
+    return [words[key] for key in sorted(words.keys())]
