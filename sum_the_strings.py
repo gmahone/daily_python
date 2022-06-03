@@ -16,3 +16,11 @@ def sum_str(a, b):
 # different "" handling solution
 def sum_str(a, b):
     return str(int('0' + a) + int('0' + b))
+
+
+# case testing
+def sum_str(a, b):
+    print(a, b)
+    if a == "" or a == None: a = "0"
+    if b == "" or b == None: b = "0"
+    return str(int(a)+int(b))
