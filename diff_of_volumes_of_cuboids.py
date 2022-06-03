@@ -20,3 +20,9 @@ def find_difference(a, b):
 # direct solution
 def find_difference(a, b):
     return abs((a[1]*a[2]*a[0])-b[1]*b[2]*b[0])
+
+# using numpy
+from numpy import prod
+
+def find_difference(a, b):
+    return abs(prod(a) - prod(b))
