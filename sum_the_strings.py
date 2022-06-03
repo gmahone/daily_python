@@ -6,3 +6,9 @@ def sum_str(a, b):
     if b is not "":
         int_b = int(b)
     return str(int_a+int_b)
+
+# other solutions
+
+# simple or solution
+def sum_str(a, b):
+    return str(int(a or 0) + int(b or 0))
