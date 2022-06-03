@@ -12,3 +12,7 @@ def sum_str(a, b):
 # simple or solution
 def sum_str(a, b):
     return str(int(a or 0) + int(b or 0))
+
+# different "" handling solution
+def sum_str(a, b):
+    return str(int('0' + a) + int('0' + b))
