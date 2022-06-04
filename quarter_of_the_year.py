@@ -29,3 +29,6 @@ def quarter_of(month):
 # another integer division solution
 def quarter_of(month):
     return (month-1) // 3 + 1 
+
+# lambda function integer division
+quarter_of = lambda month: (month+2)//3
