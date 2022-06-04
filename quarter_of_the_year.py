@@ -16,3 +16,8 @@ def quarter_of(month):
         return 3
     elif month in range(10, 13):
         return 4
+    
+# solution using importing ONLY ceil
+from math import ceil
+def quarter_of(month):
+    return ceil(month / 3)
