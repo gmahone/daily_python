@@ -25,3 +25,7 @@ def quarter_of(month):
 # integer division solution
 def quarter_of(month):
     return (month + 2) // 3
+
+# another integer division solution
+def quarter_of(month):
+    return (month-1) // 3 + 1 
