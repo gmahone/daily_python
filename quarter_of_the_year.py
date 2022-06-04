@@ -1,2 +1,2 @@
 def quarter_of(month):
-    # your code here
+    return math.ceil(month / 12 * 4)
