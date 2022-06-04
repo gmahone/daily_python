@@ -21,3 +21,7 @@ def quarter_of(month):
 from math import ceil
 def quarter_of(month):
     return ceil(month / 3)
+
+# integer division solution
+def quarter_of(n):
+    return (n + 2) // 3
