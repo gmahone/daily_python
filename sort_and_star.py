@@ -12,3 +12,7 @@ def two_sort(array):
 # other solutions
 def two_sort(array):
     return '***'.join(min(array))
+
+# apparently sorted works directly with no key here
+def two_sort(array):
+    return '***'.join(sorted(array)[0])
