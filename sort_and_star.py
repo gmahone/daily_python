@@ -16,3 +16,6 @@ def two_sort(array):
 # apparently sorted works directly with no key here
 def two_sort(array):
     return '***'.join(sorted(array)[0])
+
+# lambda solution version
+two_sort = lambda a: "***".join(sorted(a)[0])
