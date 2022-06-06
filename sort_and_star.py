@@ -1,2 +1,2 @@
 def two_sort(array):
-    # your code here
+    print(array.sort)
