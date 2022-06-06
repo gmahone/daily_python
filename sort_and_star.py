@@ -1,7 +1,7 @@
 def get_char_code(element):
     result = []
     for i in list(element):
-        result.appent(ord(i))
+        result.append(ord(i))
     return result
 
 def two_sort(array):
