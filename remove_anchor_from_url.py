@@ -1,6 +1,10 @@
 def remove_url_anchor(url):
     return url.split("#")[0]
 
+# lambda function version
+remove_url_anchor = lambda url: url.split('#')[0]
+
+
 # other solutions
 
 # using partition
