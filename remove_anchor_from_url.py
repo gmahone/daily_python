@@ -6,3 +6,8 @@ def remove_url_anchor(url):
 # using partition
 def remove_url_anchor(url):
   return url.partition('#')[0]
+
+# regex solution
+def remove_url_anchor(url):
+  import re
+  return re.sub('#.*$','',url)
