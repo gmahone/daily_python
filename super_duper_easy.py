@@ -1,2 +1,5 @@
 def problem(a):
-    #Easy Points ^_^
+    try:
+        return 50 * a + 6
+    except:
+        return "Error"
