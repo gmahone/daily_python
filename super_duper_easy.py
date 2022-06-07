@@ -6,6 +6,6 @@ def problem(a):
 
 # other solutions
 
-# other formulation
+# other formulation, using isinstance
 def problem(a):
     return "Error" if isinstance(a,str) else a*50+6
