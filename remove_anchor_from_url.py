@@ -11,3 +11,8 @@ def remove_url_anchor(url):
 def remove_url_anchor(url):
   import re
   return re.sub('#.*$','',url)
+
+# using up to found index
+def remove_url_anchor(url):
+    index = url.find('#')
+    return url[:index] if index >= 0 else url
