@@ -10,3 +10,7 @@ def remove_every_other(my_list):
         if i % 2 == 0:
             r.append(my_list[i])
     return r
+
+# enumerate solution
+def remove_every_other(my_list):
+    return [v for c,v in enumerate(my_list) if not c%2]
