@@ -6,5 +6,4 @@ def filter_odd(input: [any]):
             return True
 
 def remove_every_other(my_list):
-    # Your code here!
-    pass
+    return filter(filter_odd, my_list)
