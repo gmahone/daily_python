@@ -19,3 +19,7 @@ def remove_every_other(my_list):
 def remove_every_other(my_list):
     del my_list[1::2]
     return my_list
+
+# list via indexing
+def remove_every_other(my_list):
+    return [ my_list[i] for i in range(0,len(my_list),2)]
