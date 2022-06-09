@@ -14,3 +14,8 @@ def remove_every_other(my_list):
 # enumerate solution
 def remove_every_other(my_list):
     return [v for c,v in enumerate(my_list) if not c%2]
+
+# index deletion solution
+def remove_every_other(my_list):
+    del my_list[1::2]
+    return my_list
