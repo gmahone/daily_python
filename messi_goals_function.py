@@ -1,2 +1,2 @@
 def goals(laLiga, copaDelRey, championsLeague):
-    pass
+    return laLiga + copaDelRey + championsLeague
