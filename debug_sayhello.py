@@ -6,3 +6,7 @@ def say_hello(name):
 # template literal solution
 def say_hello(name):
     return f"Hello, {name}"
+
+# solution using .format
+def say_hello(name):
+    return "Hello, {}".format(name)
