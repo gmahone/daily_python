@@ -19,3 +19,6 @@ def say_hello(name):
 # using %s
 def say_hello(name):
     return "Hello, %s" % name
+
+# using .__add__
+say_hello = "Hello, ".__add__
