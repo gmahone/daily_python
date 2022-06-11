@@ -14,3 +14,8 @@ def say_hello(name):
 # another .format
 def say_hello(name):
   return "Hello, {0}".format(name)
+
+
+# using %s
+def say_hello(name):
+    return "Hello, %s" % name
