@@ -10,3 +10,7 @@ def say_hello(name):
 # solution using .format
 def say_hello(name):
     return "Hello, {}".format(name)
+
+# another .format
+def say_hello(name):
+  return "Hello, {0}".format(name)
