@@ -10,10 +10,6 @@ def is_valid_walk(walk):
         currentVal = walk.pop()
         if dict_opposites[currentVal] in walk:
             currentOpp = walk.index(dict_opposites[currentVal])
+            walk.remove(currentOpp)
         else:
-            return False        
-        walk.remove(currentOpp)
-        nextLen = len(walk)
-        if currentLen == nextLen:
             return False
-        
