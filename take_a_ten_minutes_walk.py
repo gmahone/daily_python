@@ -9,7 +9,6 @@ def is_valid_walk(walk):
             return True
         currentVal = walk.pop()
         if dict_opposites[currentVal] in walk:
-            currentOpp = walk.index(dict_opposites[currentVal])
-            walk.remove(currentOpp)
+            walk.remove(dict_opposites[currentVal])
         else:
             return False
