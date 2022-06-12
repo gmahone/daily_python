@@ -1,3 +1,4 @@
 def is_valid_walk(walk):
-    #determine if walk is valid
-    pass
+    # test if length > 10
+    if len(walk) > 10 or is not len(walk) % 2:
+        return false
