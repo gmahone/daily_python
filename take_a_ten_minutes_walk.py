@@ -8,7 +8,10 @@ def is_valid_walk(walk):
         if currentLen == 0:
             return True
         currentVal = walk.pop()
-        currentOpp = walk.index(dict_opposites[currentVal])
+        if dict_opposites[currentVal] in walk:
+            currentOpp = walk.index(dict_opposites[currentVal])
+        else:
+            return False        
         walk.remove(currentOpp)
         nextLen = len(walk)
         if currentLen == nextLen:
