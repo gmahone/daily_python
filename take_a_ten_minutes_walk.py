@@ -17,3 +17,11 @@ def is_valid_walk(walk):
 # testing the counts of each pair
 def isValidWalk(walk):
     return len(walk) == 10 and walk.count('n') == walk.count('s') and walk.count('e') == walk.count('w')
+
+# another paired count solution
+def isValidWalk(walk):
+    if (walk.count('n') == walk.count('s') and 
+        walk.count('e') == walk.count('w') and
+        len(walk) == 10):
+            return True
+    return False
