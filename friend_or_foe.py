@@ -14,3 +14,7 @@ def friend(x):
 # solution not using filter
 def friend(x):
     return [f for f in x if len(f) == 4]
+
+# using filter with lambda
+def friend(x):
+    return list(filter(lambda item : len(item)==4 ,x))
