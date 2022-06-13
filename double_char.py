@@ -1,2 +1,6 @@
 def double_char(s):
-    pass
+    output = []
+    for x in list(s):
+        if x not in output:
+            output.append(x)
+    return "".join(output)
