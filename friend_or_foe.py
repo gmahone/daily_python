@@ -1,2 +1,5 @@
+def friend_finder(item):
+    return len(item) == 4
+
 def friend(x):
-    #Code
+    return filter(x, friend_finder)
