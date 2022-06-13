@@ -1,5 +1,9 @@
 def friend_finder(item):
-    return len(item) == 4
+    if len(item) == 4:
+        return True
+    else:
+        return False
 
 def friend(x):
-    return filter(x, friend_finder)
+    result = filter(friend_finder, x)
+    return result
