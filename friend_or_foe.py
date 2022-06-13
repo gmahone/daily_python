@@ -5,5 +5,5 @@ def friend_finder(item):
         return False
 
 def friend(x):
-    result = filter(friend_finder, x)
+    result = list(filter(friend_finder, x))
     return result
