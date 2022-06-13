@@ -1,1 +1,2 @@
-
+def friend(x):
+    #Code
