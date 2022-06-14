@@ -10,3 +10,7 @@ def reverse_letter(string):
 # classic python formulaic method
 def reverse_letter(s):
   return ''.join([i for i in s if i.isalpha()])[::-1]
+
+# different filter formulation
+def reverse_letter(string):
+    return ''.join(filter(str.isalpha, reversed(string)))
