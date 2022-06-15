@@ -1,2 +1,7 @@
+def define_capital(char):
+    return 64 < ord(char) < 91
+
 def capitals(word):
-    #your code here
+    word_list = filter(define_capital, list(word))
+    return list(word_list)
+    
