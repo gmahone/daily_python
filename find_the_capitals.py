@@ -8,3 +8,10 @@ def capitals(word):
         if define_capital(word_list[i]):
             result.append(i)
     return result
+
+
+## other solutions
+
+# using enumerate
+def capitals(word):
+    return [i for (i, c) in enumerate(word) if c.isupper()]
