@@ -23,3 +23,7 @@ def capitals(word):
         if word[i].isupper():
             uppers.append(i)
     return uppers
+
+# lambda solution
+def capitals(word):
+    return filter(lambda x: word[x].isupper(), range(len(word)))
