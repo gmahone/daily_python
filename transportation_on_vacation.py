@@ -15,3 +15,8 @@ def rental_car_cost(d):
 # one line else if chain
 def rental_car_cost(d):
     return d*40 - 50 if d >= 7 else d*40 -20 if d >= 3 else d*40  
+
+# one line if else if else for discount
+def rental_car_cost(d):
+    discount = 50 if d > 6 else 20 if d > 2 else 0 
+    return d * 40 - discount
