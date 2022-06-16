@@ -7,3 +7,7 @@ def combat(health, damage):
 # solution using max
 def combat(health, damage):
     return max(0, health - damage)
+
+# similar formulation as original solution
+def combat(health, damage):
+    return health - damage if health > damage else 0
