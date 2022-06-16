@@ -11,3 +11,7 @@ def rental_car_cost(d):
 # solution using in line boolean conversion
 def rental_car_cost(d):
   return d * 40 - (d > 2) * 20 - (d > 6) * 30
+
+# one line else if chain
+def rental_car_cost(d):
+    return d*40 - 50 if d >= 7 else d*40 -20 if d >= 3 else d*40  
