@@ -1,2 +1,2 @@
 def combat(health, damage):
-    #your code here
+    return health - damage
