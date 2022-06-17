@@ -3,4 +3,4 @@ def no_boring_zeros(n):
         return n
     else:
         n = int(n/10)
-        return remove_zeros(n)
+        return no_boring_zeros(n)
