@@ -10,3 +10,6 @@ def reverse_list(l):
 def reverse_list(l):
   l.reverse()
   return l
+
+# using lambda function
+reverse_list = lambda l: l[::-1]
