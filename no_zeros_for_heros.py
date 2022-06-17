@@ -13,3 +13,7 @@ def no_boring_zeros(n):
         return int(str(n).rstrip("0"))
     except ValueError:
         return 0
+
+# string strip using if else
+def no_boring_zeros(n):
+  return int(str(n).rstrip("0")) if n else n
