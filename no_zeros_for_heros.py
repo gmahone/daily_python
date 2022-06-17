@@ -6,3 +6,10 @@ def no_boring_zeros(n):
     else:
         n = int(n/10)
         return no_boring_zeros(n)
+
+# string stripping solution
+def no_boring_zeros(n):
+    try:
+        return int(str(n).rstrip("0"))
+    except ValueError:
+        return 0
