@@ -1,5 +1,7 @@
 def no_boring_zeros(n):
-    if n % 10:
+    if not n:
+        return n
+    elif n % 10:
         return n
     else:
         n = int(n/10)
