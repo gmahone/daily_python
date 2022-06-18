@@ -5,3 +5,7 @@ def unusual_five():
 # via len()
 def unusual_five():
     return len("aaaaa")
+
+# add solution using ord()
+def unusual_five():
+    return ord("")
