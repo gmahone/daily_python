@@ -9,3 +9,6 @@ def unusual_five():
 # add solution using ord()
 def unusual_five():
     return ord("")
+
+# lambda solution using len
+unusual_five = lambda: len("aaaaa")
