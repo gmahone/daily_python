@@ -1,2 +1,2 @@
 def unusual_five():
-    pass
+    return ["", "", "", "", "", "a"].index("a")
