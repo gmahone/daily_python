@@ -4,3 +4,6 @@ def stock_list(listOfArt, listOfCat):
         split_temp = i.split(" ")
         if split_temp[0][0] in art_dict:
             art_dict[split_temp[0][0]] += int(split_temp[1])
+    result = []
+    for k,v in art_dict.iteritems():
+        result.append(f'( {k} : {v} )')
