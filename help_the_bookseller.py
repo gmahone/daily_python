@@ -7,4 +7,4 @@ def stock_list(listOfArt, listOfCat):
     result = []
     for k,v in art_dict.items():
         result.append(f'({k} : {v})')
-    return " - ".join(result) if len(listOfArt) != 0 or len(listOfCat) != 0 else ''
+    return " - ".join(result) if len(listOfArt) != 0 else ''
