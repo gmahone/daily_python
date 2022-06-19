@@ -1,2 +1,2 @@
 def get_char(c):
-  pass
+  return chr(c)
