@@ -27,3 +27,19 @@ def stock_list(listOfArt, listOfCat):
             listOfCat,
             sum(int(item.split()[1]) for item in listOfArt if item[0] == listOfCat))
         for listOfCat in listOfCat)
+
+
+# non dictionary solution
+def stock_list(listOfArt, listOfCat):
+    if len(listOfArt) == 0) or (len(listOfCat) == 0:
+        return ""
+    result = ""
+    for cat in listOfCat:
+        sumtotal = 0
+        for book in listOfArt:
+            if book[0] == cat[0]:
+                sumtotal += int(book.split(" ")[1])
+        if len(result) != 0:
+            result += " - "
+        result += "(" + str(cat) + " : " + str(sumtotal) + ")"
+    return result
