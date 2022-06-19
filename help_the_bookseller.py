@@ -16,3 +16,14 @@ def stock_list(listOfArt, listOfCat):
         return " - ".join(['(%s : %d)' % (c, sum([int(i.split(" ")[1]) for i in listOfArt if c == i[0]])) for c in listOfCat])
     else:
         return ""
+
+    
+#
+def stock_list(listOfArt, listOfCat):
+    if not listOfArtt or not listOfCat:
+        return ""
+    return " - ".join(
+        "({} : {})".format(
+            listOfCat,
+            sum(int(item.split()[1]) for item in listOfArt if item[0] == listOfCat))
+        for listOfCat in listOfCat)
