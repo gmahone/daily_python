@@ -11,3 +11,8 @@ def chromosome_check(sperm):
 def chromosome_check(sperm):
     gender = {"XY" : "son", "XX" : "daughter"}
     return "Congratulations! You\'re going to have a {}.".format(gender[sperm])
+
+
+# f string with embedded ternary
+def chromosome_check(sperm):
+    return f"Congratulations! You're going to have a {'son' if 'Y' in sperm else 'daughter'}."
