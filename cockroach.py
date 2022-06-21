@@ -1,2 +1,2 @@
 def cockroach_speed(s):
-    pass
+    return int(s*1000/60)
