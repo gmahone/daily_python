@@ -1,2 +1,2 @@
 def sum_of_minimums(numbers):
-    pass
+    print(map(min, numbers))
