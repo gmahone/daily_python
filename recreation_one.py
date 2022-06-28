@@ -1,6 +1,6 @@
 def find_divisors(x):
     result = [];
-    for i in range(0, x+1):
+    for i in range(1, x+1):
         if x % i == 0:
             result.append(i)
     return result
