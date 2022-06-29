@@ -9,4 +9,10 @@ def square_num(x):
     return x*x
 
 def list_squared(m, n):
-    pass
+    result = []
+    for i in range(m, n+1):
+        sum_squared_list = sum(map(square_num, find_divisors(i)))
+        sqrt_sum = sum_squared_list**0.5
+        if int(sqrt_sum) == sqrt_sum:
+            result.append([sqrt_sum, sum_squared_list])
+    return result
