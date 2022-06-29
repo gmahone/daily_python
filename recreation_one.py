@@ -1,10 +1,13 @@
 def find_divisors(x):
-    result = [1];
-    for i in range(2, x):
-        if x % i == 0:
-            result.append(i)
-    result.append(x)
-    return result
+    if x == 1:
+        return [1]
+    else:
+        result = [1];
+        for i in range(2, x):
+            if x % i == 0:
+                result.append(i)
+        result.append(x)
+        return result
 
 def square_num(x):
     return x*x
