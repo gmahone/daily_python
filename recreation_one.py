@@ -3,7 +3,7 @@ def find_divisors(x):
         return [1]
     else:
         result = [1];
-        for i in range(2, x):
+        for i in range(2, int(x/2)+1):
             if x % i == 0:
                 result.append(i)
         result.append(x)
