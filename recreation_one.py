@@ -5,5 +5,8 @@ def find_divisors(x):
             result.append(i)
     return result
 
+def square_num(x):
+    return x*x
+
 def list_squared(m, n):
     pass
