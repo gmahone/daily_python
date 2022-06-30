@@ -1,2 +1,2 @@
 def bin_to_decimal(inp):
-    pass
+    return int(inp, 2)
