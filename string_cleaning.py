@@ -3,3 +3,8 @@ def string_clean(s):
     for i in removeString:
         s = "".join(s.split(i))
     return s
+
+
+# using isdigit()
+def string_clean(s):
+    return ''.join(x for x in s if not x.isdigit())
