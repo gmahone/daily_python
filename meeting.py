@@ -1,1 +1,2 @@
-
+def meeting(s):
+    pass
