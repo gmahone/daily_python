@@ -20,3 +20,7 @@ def people_with_age_drink(age):
     else:
         drink = "whisky"
     return "drink {0}".format(drink)
+
+# string of ifs
+def people_with_age_drink(age):
+    return 'drink ' + ('toddy' if age < 14 else 'coke' if age < 18 else 'beer' if age < 21 else 'whisky')
