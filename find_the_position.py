@@ -1,1 +1,2 @@
-
+def position(alphabet):
+    pass
