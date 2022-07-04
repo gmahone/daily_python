@@ -1,2 +1,2 @@
 def position(alphabet):
-    return ord(alphabet) - 96
+    return f"Position of alphabet: {ord(alphabet) - 96}"
