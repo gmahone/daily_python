@@ -1,2 +1,2 @@
 def str_count(strng, letter):
-    return strng.split("").count(letter)
+    return list(strng).count(letter)
