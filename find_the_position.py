@@ -1,2 +1,2 @@
 def position(alphabet):
-    pass
+    return ord(alphabet) - 96
