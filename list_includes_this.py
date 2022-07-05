@@ -1,2 +1,2 @@
 def include(arr,item):
-    pass
+    return bool(arr.count(item))
