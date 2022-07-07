@@ -23,3 +23,6 @@ regex = (
     '{6,}'         # length at least 6 chars
     '$'            # end line
 )
+
+# add solution with special char exclusion
+regex="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[^\W_]{6,}$"
