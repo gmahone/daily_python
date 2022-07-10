@@ -1,2 +1,2 @@
 def take(arr,n):
-    pass
+    return arr.slice(0, n)
