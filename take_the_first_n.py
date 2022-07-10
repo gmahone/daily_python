@@ -5,3 +5,6 @@ def take(arr,n):
 # no need for slice
 def take(arr,n):
     return arr[:n]
+
+# lambda version
+take=lambda a,n:a[:n]
