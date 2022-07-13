@@ -1,3 +1,2 @@
 def derive(coefficient, exponent): 
-    # your code here
-    pass
+    return f"{coefficient*exponent}^{exponent-1}" if exponent > 2 else f"{coefficient*exponent}"
