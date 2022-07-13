@@ -24,3 +24,13 @@ def choose_best_sum(t, k, ls):
         if 0 < (t - sum(subset)) < (t - sum(best_set)):
             best_set = subset
     return None if sum(best_set) == 0 else sum(best_set)
+
+
+## simpler solution
+import itertools
+
+def choose_best_sum(t, k, ls):
+    try: 
+        return max(sum(subset) for subset in itertools.combinations(ls,k) if sum(subset)<=t)
+    except:
+        return None
