@@ -18,6 +18,8 @@ import itertools
 def choose_best_sum(t, k, ls):
     best_set = [t]
     for subset in itertools.combinations(ls, k):
-        if 0 <= (t - sum(subset)) < sum(best_set):
+        if (t - sum(subset)) == 0:
+            return sum(subset)
+        if 0 < (t - sum(subset)) < sum(best_set):
             best_set = subset
     return None if best_set == t else sum(best_set)
