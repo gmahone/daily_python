@@ -16,11 +16,11 @@
 import itertools
 
 def choose_best_sum(t, k, ls):
-    best_set = [t]
+    best_set = [0]
+    print(t,k)
     for subset in itertools.combinations(ls, k):
         if (t - sum(subset)) == 0:
             return sum(subset)
-        if 0 < (t - sum(subset)) < sum(best_set):
+        if 0 < (t - sum(subset)) < (t - sum(best_set)):
             best_set = subset
-        print(best_set)
-    return None if sum(best_set) == sum([t]) else sum(best_set)
+    return None if sum(best_set) == 0 else sum(best_set)
