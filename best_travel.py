@@ -22,4 +22,5 @@ def choose_best_sum(t, k, ls):
             return sum(subset)
         if 0 < (t - sum(subset)) < sum(best_set):
             best_set = subset
-    return None if best_set == t else sum(best_set)
+        print(best_set)
+    return None if sum(best_set) == sum([t]) else sum(best_set)
