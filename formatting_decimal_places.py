@@ -12,3 +12,6 @@ def two_decimal_places(n):
 # add solution using string formatting
 def two_decimal_places(n):
     return float("%.2f" % n)
+
+# lambda version
+two_decimal_places = lambda n : round(n, 2)
