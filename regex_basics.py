@@ -1,4 +1,9 @@
 import re
 
 def is_digit(n):
-    return len(n) & bool(re.search(n, "0123456789"))
+    return len(n) & n.isdigit() & bool(re.search(n, "0123456789"))
+
+
+def is_digit(n):
+    print(n)
+    return n.isdigit() & bool(len(n.strip()))
