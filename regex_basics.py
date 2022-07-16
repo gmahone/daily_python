@@ -1,2 +1,4 @@
+import re
+
 def is_digit(n):
-    #your code here
+    return re.search(n, "0-9")
