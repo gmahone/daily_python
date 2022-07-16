@@ -1,4 +1,4 @@
 import re
 
 def is_digit(n):
-    return re.search(n, "0-9")
+    return len(n) & bool(re.search(n, "0123456789"))
