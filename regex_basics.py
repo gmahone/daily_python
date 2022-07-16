@@ -26,3 +26,9 @@ def is_digit(n):
 
 def is_digit(n):
     return n.isdigit() & len(n) == 1
+
+
+import re
+
+def is_digit(n):
+    return bool(re.match("\d\Z", n))
