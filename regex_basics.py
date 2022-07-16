@@ -17,3 +17,8 @@ import re
 def is_digit(n):
     print(n);
     return bool(re.search(n, "^[0123456789]$")) & bool(len(n.strip()))
+
+import re
+def is_digit(n):
+    print(n);
+    return bool(re.search(n, "^[\W_][0123456789]*$")) & bool(len(n.strip()))
