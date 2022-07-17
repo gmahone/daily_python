@@ -1,1 +1,2 @@
-
+def array(string):
+    pass
