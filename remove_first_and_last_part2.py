@@ -1,2 +1,3 @@
 def array(string):
-    pass
+    result = string.split(",")
+    return None if len(result) < 3 else " ".join()
