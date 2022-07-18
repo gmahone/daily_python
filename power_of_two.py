@@ -8,3 +8,7 @@ def power_of_two(x):
 # math solution
 def power_of_two(x):
     return x != 0 and ((x & (x - 1)) == 0)
+
+# add binary solution
+def power_of_two(x):
+  return bin(x).count('1')==1
