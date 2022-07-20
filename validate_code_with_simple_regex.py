@@ -1,2 +1,4 @@
+import re
+
 def validate_code(code):
-    pass
+    return code.match("/^[123]")
