@@ -7,3 +7,8 @@ def validate_code(code):
 # non regex solution
 def validate_code(code):
     return str(code).startswith(('1', '2', '3'))
+
+
+# non regex solution
+def validate_code(code):
+    return str(code)[0] in '123'
