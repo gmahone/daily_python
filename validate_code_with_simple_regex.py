@@ -1,4 +1,4 @@
 import re
 
 def validate_code(code):
-    return code.match("/^[123]")
+    return bool(re.findall("^[123]", str(code)))
