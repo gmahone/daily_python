@@ -1,2 +1,2 @@
 def name_shuffler(str_):
-    pass
+    return " ".join(str_.split(" ").reverse())
