@@ -4,3 +4,9 @@ def name_shuffler(str_):
 # using reversed
 def name_shuffler(s):
     return " ".join(reversed(s.split()))
+
+
+# using explicit list
+def name_shuffler(str_):
+    [first, last] = str_.split()
+    return last + " " + first
