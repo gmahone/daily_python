@@ -10,3 +10,7 @@ def name_shuffler(s):
 def name_shuffler(str_):
     [first, last] = str_.split()
     return last + " " + first
+
+
+# add lambda version
+name_shuffler = lambda s: ' '.join(reversed(s.split()))
