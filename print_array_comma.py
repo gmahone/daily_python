@@ -10,4 +10,4 @@ def print_array(arr):
 
 # looping in place
 def print_array(arr):
-    return ','.join(str(a) for a in arr)
+    return ','.join(str(e) for e in arr)
