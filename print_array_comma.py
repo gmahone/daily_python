@@ -7,3 +7,7 @@ def print_array(arr):
 # using map to str elements
 def print_array(arr):
     return ','.join(map(str, arr))
+
+# looping in place
+def print_array(arr):
+    return ','.join(str(a) for a in arr)
