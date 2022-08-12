@@ -5,3 +5,7 @@ def cube_checker(volume, side):
 ## simpler formulation
 def cube_checker(volume, side):
     return 0 < volume == side**3
+
+# another formulation
+def cube_checker(volume, side):
+    return side > 0 and side ** 3 == volume
