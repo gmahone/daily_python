@@ -9,3 +9,6 @@ def cube_checker(volume, side):
 # another formulation
 def cube_checker(volume, side):
     return side > 0 and side ** 3 == volume
+
+# lambda solution
+cube_checker = lambda v, s: 0 < v == s**3
