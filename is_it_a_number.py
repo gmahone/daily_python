@@ -1,1 +1,2 @@
-
+def isDigit(string):
+    pass
