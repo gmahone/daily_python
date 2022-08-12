@@ -1,2 +1,2 @@
 def isDigit(string):
-    pass
+    return True if type(float(string)) == "float" else False
