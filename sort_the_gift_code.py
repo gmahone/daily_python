@@ -1,2 +1,2 @@
 def sort_gift_code(code):
-  pass
+  return "".join(sorted(list(code)))
