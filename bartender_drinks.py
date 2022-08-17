@@ -1,9 +1,12 @@
 def get_drink_by_profession(param):
-    result_dict = {"Jabroni": "Patron Tequila",
-                  "School Counselor": "Anything with Alcohol",
-                  "Programmer": "Hipster Craft Beer",
-                  "Bike Gang Member": "Moonshine",
-                  "Politician": "Your tax dollars",
-                  "Rapper": "Cristal"}
-    result = result_dict[param] if result_dict[param] else "Beer"
+    result_dict = {"jabroni": "Patron Tequila",
+                  "school counselor": "Anything with Alcohol",
+                  "programmer": "Hipster Craft Beer",
+                  "bike gang member": "Moonshine",
+                  "politician": "Your tax dollars",
+                  "rapper": "Cristal"}
+    try: 
+        return result_dict[param.lower()]
+    except:
+        return "Beer"
     return result
