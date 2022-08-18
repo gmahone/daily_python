@@ -1,2 +1,4 @@
 def remove(s):
-    pass
+    while s[-1] == "!":
+        s = s[0:-1]
+    return s
