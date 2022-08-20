@@ -1,1 +1,2 @@
-
+def shortcut(s):
+    pass
