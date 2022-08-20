@@ -8,4 +8,6 @@ def shortcut(s):
 def shortcut(s):
     return s.translate(None, 'aeiou')
 
-
+# using "normal" python structure
+def shortcut(s):
+    return ''.join(c for c in s if c not in 'aeiou')
