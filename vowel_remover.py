@@ -5,3 +5,7 @@ def shortcut(s):
 
 
 # solution using .translate()
+def shortcut(s):
+    return s.translate(None, 'aeiou')
+
+
