@@ -1,2 +1,4 @@
 def shortcut(s):
-    pass
+    for i in list("aeiou"):
+        s = "".join(s.split(i))
+    return s
