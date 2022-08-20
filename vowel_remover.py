@@ -11,3 +11,9 @@ def shortcut(s):
 # using "normal" python structure
 def shortcut(s):
     return ''.join(c for c in s if c not in 'aeiou')
+
+# using replace
+def shortcut( s ):
+    for vowel in "aeiou":
+        s = s.replace(vowel, "")
+    return s
