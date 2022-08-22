@@ -16,3 +16,8 @@ def get_number_from_string(s):
 # using filter
 def get_number_from_string(string):
     return int(''.join(filter(str.isdigit, string)))
+
+
+# using filter without join
+def get_number_from_string(string):
+    return int(filter(str.isdigit, string))
