@@ -30,3 +30,15 @@ def tower_builder(n_floors):
         result.append(space + stars + space)
     
     return result
+
+
+## add solution with variable addition/reduction
+def tower_builder(n_floors):
+    tower = []
+    spacing = n_floors - 1
+    stars = 1
+    for i in range(0, n_floors):
+        tower.append(' ' * spacing + '*' * stars + spacing * ' ')
+        stars += 2
+        spacing -= 1
+    return tower
