@@ -9,3 +9,8 @@ def tower_builder(n_floors):
         right_pad = " " * pad_numbers[i]
         result.append("{}{}{}".format(left_pad, asterisk_pad, right_pad))
     return result
+
+
+## solution using center
+def tower_builder(n):
+    return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
