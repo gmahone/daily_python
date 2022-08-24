@@ -14,3 +14,19 @@ def tower_builder(n_floors):
 ## solution using center
 def tower_builder(n):
     return [("*" * (i*2-1)).center(n*2-1) for i in range(1, n+1)]
+
+
+## add alternative loop solution
+def tower_builder(n_floors):
+    if n_floors == 0:
+        return []
+        
+    count = 1
+    result = []
+
+    for i in range(1, n_floors + 1):
+        stars = '*' * (2 * i - 1)
+        space = ' ' * (n_floors - i)
+        result.append(space + stars + space)
+    
+    return result
