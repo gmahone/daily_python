@@ -4,4 +4,4 @@ def quote(fighter):
     elif fighter.lower() == "conor mcgregor":
         return "I'd like to take this chance to apologize.. To absolutely NOBODY!"
     else:
-        return "Wrong input"
+        return "Please either George Saint Pierre or Conor McGregor"
