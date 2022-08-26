@@ -6,3 +6,11 @@ def largest_pair_sum(numbers):
 ## different indexing
 def largest_pair_sum(numbers): 
     return sum(sorted(numbers)[-2:])
+
+
+## solution which finds sequential maximums
+def largest_pair_sum(numbers): 
+    max1 = max(numbers)
+    numbers.remove(max1)
+    max2 = max(numbers)
+    return max1 + max2
