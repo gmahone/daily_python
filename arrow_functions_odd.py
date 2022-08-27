@@ -1,1 +1,1 @@
-
+odds = lambda: 
