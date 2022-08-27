@@ -7,3 +7,6 @@ odds = lambda a: list(filter(filter_odd, a))
 ## add solution using for in if
 def odds(values):
         return [i for i in values if i%2]
+
+## lambda version
+odds = lambda o: [i for i in o if i % 2 != 0]
