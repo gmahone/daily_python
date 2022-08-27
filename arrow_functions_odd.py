@@ -10,3 +10,8 @@ def odds(values):
 
 ## lambda version
 odds = lambda o: [i for i in o if i % 2 != 0]
+
+
+## using lambda within function and bitwise operation
+def odds(values):
+    return list(filter(lambda x: x&1,values))
