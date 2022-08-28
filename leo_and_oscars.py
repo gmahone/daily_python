@@ -1,1 +1,2 @@
-
+def leo(oscar):
+    pass
