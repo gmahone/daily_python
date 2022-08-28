@@ -4,3 +4,5 @@ def leo(oscar):
         result = "Leo finally won the oscar! Leo is happy"
     if oscar == 86:
         result = "Not even for Wolf of wallstreet?!"
+    if oscar > 88:
+        result = "Leo got one already!"
