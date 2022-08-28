@@ -1,2 +1,2 @@
 def leo(oscar):
-    pass
+    result = "When will you give Leo an Oscar?"
