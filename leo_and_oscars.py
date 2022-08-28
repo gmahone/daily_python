@@ -6,3 +6,4 @@ def leo(oscar):
         result = "Not even for Wolf of wallstreet?!"
     if oscar > 88:
         result = "Leo got one already!"
+    return result
