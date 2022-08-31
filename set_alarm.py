@@ -18,3 +18,11 @@ def set_alarm(employed, vacation):
 
 # lambda function
 set_alarm=lambda *a:a==(1,0)
+
+
+# case testing and using is False
+def set_alarm(employed, vacation):
+    if employed and vacation is False:
+        return True
+    else:
+        return False
