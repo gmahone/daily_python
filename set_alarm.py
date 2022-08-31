@@ -14,3 +14,7 @@ def set_alarm(employed, vacation):
             return False
         return True
     return False
+
+
+# lambda function
+set_alarm=lambda *a:a==(1,0)
