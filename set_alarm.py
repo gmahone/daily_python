@@ -1,2 +1,2 @@
 def set_alarm(employed, vacation):
-    pass
+    return true if employed and not vacation else false
