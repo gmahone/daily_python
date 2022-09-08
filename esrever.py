@@ -4,3 +4,4 @@ def reverse(lst):
         result.append(lst[i])
         print(result)
     return result
+
