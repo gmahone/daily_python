@@ -1,7 +1,7 @@
 def reverse(lst):
     result = list()
-    for i in range(length(lst),0):
-        result.append(lst[i])
+    while len(lst) > 0:
+        print(lst[i])
+        result.append(lst.pop(i))
         print(result)
     return result
-
