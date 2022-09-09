@@ -1,2 +1,2 @@
 def _all(seq, fun): 
-    pass
+    return all(map(seq, fun))
