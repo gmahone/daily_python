@@ -8,3 +8,8 @@ def all(seq, fun):
         if not fun(item): 
             return False
     return True
+
+
+## using list comprehension
+def _all(seq, fun):
+    return all([fun(x) for x in seq])
