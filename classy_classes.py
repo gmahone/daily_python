@@ -1,4 +1,4 @@
 class Person:
-    def __init__(self,name,age):
-        self.info="{name}s age is {age}"
+    def __init__(self, name, age):
+        self.info="{name}s age is {age}".format(name = name, age = age)
     
