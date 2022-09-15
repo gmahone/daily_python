@@ -1,3 +1,4 @@
 def to_freud(sentence):
-  print(len(sentence.split(" ")))
+  result = ["sex" for i in (sentence.split(" "))]
+  print(result)
   pass
