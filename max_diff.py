@@ -1,2 +1,2 @@
 def max_diff(lst):
-    pass
+    return max(lst) - min(lst) if lst else 0
