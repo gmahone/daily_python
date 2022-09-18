@@ -1,2 +1,2 @@
 def alternate_case(s):
-    pass
+    return s.swapcase()
