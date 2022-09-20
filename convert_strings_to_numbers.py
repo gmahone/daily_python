@@ -1,2 +1,2 @@
 def to_float_array(arr): 
-    return map(float, arr)
+    return [float(i) for i in arr]
