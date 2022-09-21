@@ -1,2 +1,2 @@
 def remove(s, n):
-    pass
+    return s.remove("!", "", n)
