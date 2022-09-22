@@ -1,2 +1,2 @@
 def nba_extrap(ppg, mpg):
-    pass
+    return mpg/ppg*48
