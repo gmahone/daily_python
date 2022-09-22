@@ -1,3 +1,3 @@
 def nba_extrap(ppg, mpg):
-    print (ppg/mpg*48)
+    print (round(ppg/mpg*48,2))
     pass
