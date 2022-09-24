@@ -2,10 +2,13 @@ def test_xor(arr):
     print(arr)
     if(len(arr) > 2):
         return test_xor([arr[0] != arr[1]] + arr[2:])
-    else:
+    elif(len(arr) == 2):
         return arr[0] != arr[1]
+    else: 
+        return arr[0]
 
 def logical_calc(array, op):
+    print(array)
     if op == "OR":
         return any(array)
     if op == "AND":
