@@ -1,2 +1,2 @@
 def logical_calc(array, op):
-    pass
+    return any(array) if op == "OR" else all(array)
