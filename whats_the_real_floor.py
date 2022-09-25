@@ -6,3 +6,7 @@ def get_real_floor(n):
     if n <= 0: return n
     if n < 13: return n-1
     if n > 13: return n-2
+
+# math boolean
+def get_real_floor(n):
+    return n - (n > 0) - (n > 13)
