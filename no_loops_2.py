@@ -1,2 +1,2 @@
 def check(a, x):
-    pass
+    return x in a
