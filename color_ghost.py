@@ -1,3 +1,4 @@
 class Ghost(object):
     def __init__(self):
-        self.color = ["white", "yellow", "purple", "red"]
+        color_list = ["white", "yellow", "purple", "red"]
+        self.color = color_list[randint(0,3)]
