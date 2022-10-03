@@ -4,3 +4,8 @@ def get_ascii(c):
 
 ## renaming function
 get_ascii = ord
+
+
+## using types
+def get_ascii(char: str) -> int:
+    return ord(char)
