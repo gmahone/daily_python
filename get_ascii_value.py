@@ -1,2 +1,2 @@
 def get_ascii(c):
-    pass
+    return ord(c)
