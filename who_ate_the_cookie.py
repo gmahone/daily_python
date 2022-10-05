@@ -1,8 +1,8 @@
 def cookie(x):
     if type(x) is str:
-        print("String")
+        culprit = "Zach"
     elif type(x) is int or type(x) is float:
-        print("Number")
+        culprit = "Monica"
     else:
-        print("Other")
-    pass
+        culprit = "the dog"
+    return "Who took the cookie? It was {}".format(culprit)
