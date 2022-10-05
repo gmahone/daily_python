@@ -11,3 +11,12 @@ def cookie(x):
 # using get type
 def cookie(x):
     return "Who ate the last cookie? It was %s!" % {str:"Zach", float:"Monica", int:"Monica"}.get(type(x), "the dog")
+
+
+## using try
+def cookie(x):
+    try:
+        who = {int: 'Monica', float: 'Monica', str: 'Zach'}[type(x)]
+    except KeyError:
+        who = 'the dog'
+    return 'Who ate the last cookie? It was %s!' % who
