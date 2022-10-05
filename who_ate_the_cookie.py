@@ -5,4 +5,4 @@ def cookie(x):
         culprit = "Monica"
     else:
         culprit = "the dog"
-    return "Who took the cookie? It was {}".format(culprit)
+    return "Who ate the last cookie? It was {}!".format(culprit)
