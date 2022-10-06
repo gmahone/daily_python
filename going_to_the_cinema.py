@@ -1,2 +1,7 @@
 def movie(card, ticket, perc):
-    pass
+    i <- 1
+    while true:
+        card += (ticket * (perc^i))
+        print(round(card))
+        if i > 5:
+            return "Stopped"
