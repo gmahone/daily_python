@@ -3,6 +3,6 @@ def movie(card, ticket, perc):
     while True:
         card += (ticket * (perc**i))
         print(round(card))
-        if i > 5:
-            return "Stopped"
+        if round(card) < (ticket*i):
+            return i
         i += 1
