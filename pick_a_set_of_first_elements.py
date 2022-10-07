@@ -1,2 +1,2 @@
 def first(seq, n): 
-    pass
+    return seq.slice(0,n+1)
