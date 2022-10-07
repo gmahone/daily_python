@@ -1,2 +1,3 @@
-def first(seq, n): 
-    return seq[slice(0,n+1)]
+def first(seq, n):
+    x = slice(0,n+1)
+    return seq[x]
