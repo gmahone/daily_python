@@ -3,3 +3,7 @@ def first(seq, n=None):
         return seq[slice(0,1)]
     else:
         return seq[slice(0,n)]
+
+# simple solution
+def first(seq, n=1): 
+    return seq[:n]
