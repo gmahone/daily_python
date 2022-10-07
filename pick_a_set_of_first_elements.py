@@ -1,3 +1,3 @@
 def first(seq, n):
-    x = slice(0,n+1)
-    return seq[x]
+    print(n)
+    return seq[slice(0,n)] if n else seq[slice(0,1)]
