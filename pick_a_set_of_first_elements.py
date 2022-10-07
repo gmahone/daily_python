@@ -7,3 +7,6 @@ def first(seq, n=None):
 # simple solution
 def first(seq, n=1): 
     return seq[:n]
+# more explicit
+def first(seq, n=1): 
+    return seq[0:n]
