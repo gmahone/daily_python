@@ -1,3 +1,3 @@
 def human_years_cat_years_dog_years(human_years):
-    #return [0,0,0]
+    result_human = human_years
     pass
