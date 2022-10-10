@@ -8,8 +8,8 @@ def (main):
   roll_dice()
   move()  
   combat()
-  #attack()
   get_coins()
+  buy_health()
   print_status()
   
 
