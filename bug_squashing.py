@@ -5,9 +5,11 @@ position = 0
 coins = 0
 
 def (main):
-  get_coins()
-  move()
-  print_status()
-  combat()
   roll_dice()
-  attack()
+  move()  
+  combat()
+  #attack()
+  get_coins()
+  print_status()
+  
+
