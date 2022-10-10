@@ -5,9 +5,9 @@ position = 0
 coins = 0
 
 def (main):
-  getCoins()
+  get_coins()
   move()
   print_status()
   combat()
-  rolDice()
+  roll_dice()
   attack()
