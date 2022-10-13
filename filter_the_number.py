@@ -1,2 +1,3 @@
 def filter_string(string):
-    pass
+    string_list = list(string)
+    
