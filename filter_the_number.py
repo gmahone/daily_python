@@ -11,3 +11,8 @@ def filter_string(string):
 ## simple solution
 def filter_string(string):
     return int(filter(str.isdigit, string))
+
+
+## classic formulation
+def filter_string(string):
+    return int(''.join(a for a in string if a.isdigit()))
