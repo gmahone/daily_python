@@ -6,3 +6,8 @@ def filter_string(string):
     filter_string = filter(digit_test, string_list)
     result = int("".join(list(filter_string)))
     return result
+
+
+## simple solution
+def filter_string(string):
+    return int(filter(str.isdigit, string))
