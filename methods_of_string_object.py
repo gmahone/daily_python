@@ -1,3 +1,4 @@
 def split_and_merge(string_, separator):
-    print(list(string_))
+    split_string = list(string_)
+    print(separator.join(split_string))
     pass
