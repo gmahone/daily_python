@@ -3,4 +3,7 @@ rooms = {"tomb": {"name": "Pharoah's Curse",
                   "completed": False},
          "cave": {"name": "Cave of Despare",
                   "description": "Mine-themed",
-                  "completed": True},}
+                  "completed": True},
+        {"manor": {"name": "Maniac Mansion",
+                  "description": "Clue-themed",
+                  "completed": False}}
