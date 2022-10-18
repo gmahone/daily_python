@@ -1,2 +1,3 @@
 def max_rot(n):
-    pass
+    n = str(n)
+    print(n)
