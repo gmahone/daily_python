@@ -1,3 +1,3 @@
 def solution(value):
-    result = f"{value:05}"
+    result = f"Value is {value:05}"
     return result
