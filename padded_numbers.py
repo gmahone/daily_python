@@ -1,2 +1,4 @@
 def solution(value):
-    pass
+    result = f"{value:05}"
+    print(result)
+    return ""
