@@ -6,3 +6,8 @@ def solution(value):
 # alternative solution
 def solution(value):
     return "Value is %05d" % value
+
+
+# add another alternative
+def solution(value):
+    return "Value is {:05}".format(value)
