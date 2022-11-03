@@ -1,2 +1,2 @@
 def generate_integers(m, n): 
-    pass
+    return [i for i in range(m,n+1)]
