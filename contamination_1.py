@@ -7,3 +7,7 @@ def contamination(text, char):
 import re
 def contamination(text, char):
   return re.sub(".", char, text)
+
+
+# lambda function
+contamination=lambda t,c: c*len(t)
