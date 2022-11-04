@@ -11,3 +11,7 @@ def contamination(text, char):
 
 # lambda function
 contamination=lambda t,c: c*len(t)
+
+# with types
+def contamination(text: str, char: str) -> str:
+    return char * len(text)
