@@ -1,2 +1,2 @@
 def contamination(text, char):
-  pass
+  result_len = len(text)
