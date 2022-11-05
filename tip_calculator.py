@@ -4,5 +4,5 @@ def calculate_tip(amount, rating):
     try:
         result = math.ceil(amount * tip_dict[rating.lower()])
     except:
-        result = "Rating not recognized"
+        result = "Rating not recognised"
     return result
