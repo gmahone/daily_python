@@ -1,2 +1,2 @@
 def seven_ate9(str_):
-    pass
+    return "777".join(str_.split("797"))
