@@ -16,3 +16,9 @@ def seven_ate9(str_):
     while "797" in str_:
         str_ = str_.replace("797", "77")
     return str_
+
+# regex solution
+import re
+
+def seven_ate9(str_):
+    return re.sub(r"(?<=7)9(?=7)", "", str_)
