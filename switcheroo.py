@@ -3,5 +3,5 @@ def vowel_2_index(string):
         while vowel in string:
             tmp_index = string.index(vowel)
             print(tmp_index)
-            string = string.replace(vowel, str(tmp_index))
+            string = string.replace(vowel, str(tmp_index), 1)
     pass
