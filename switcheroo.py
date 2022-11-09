@@ -12,3 +12,7 @@ def vowel_2_index(string):
 def vowel_2_index(string):
     vowels = 'aeiouAEIOU'
     return ''.join(x if x not in vowels else str(n + 1) for n,x in enumerate(string))
+
+# similar with range
+def vowel_2_index(string):
+    return ''.join( [str(i+1) if string[i].lower() in "aeiou" else string[i] for i in range(len(string))])
