@@ -1,7 +1,8 @@
 def vowel_2_index(string):
-    for vowel in "aeiou":
+    result = string
+    for vowel in "aeiouAEIOU":
         while vowel in string:
             tmp_index = string.index(vowel) + 1
-            print(tmp_index)
-            string = string.replace(vowel, str(tmp_index), 1)
-    return string
+            string = string.replace(vowel, "x", 1)
+            result = result.replace(vowel, str(tmp_index), 1)
+    return result
