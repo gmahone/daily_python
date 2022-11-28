@@ -8,6 +8,10 @@ def difference_of_squares(n):
     return squared_sum - sum_of_squares
 
 
-# list comprehension
+# loop solution
 def difference_of_squares(n):
     return sum(range(n+1))**2 - sum(i**2 for i in range(n+1))
+
+# list comprehension
+def difference_of_squares(n):
+    return sum([i for i in range(1, n + 1)]) ** 2 - sum([i ** 2 for i in range(1, n + 1)])
