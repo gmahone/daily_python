@@ -8,4 +8,4 @@ def difference_of_squares(n):
     print(squared_sum)
     sum_of_squares = sum(map(sqr, n_vec))
     print(sum_of_squares)
-    pass
+    return squared_sum - sum_of_squares
