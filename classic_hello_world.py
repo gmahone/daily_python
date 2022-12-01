@@ -1,2 +1,4 @@
 class Solution:
-  pass
+  def main:
+    print("Hello World!\n")
+    pass
