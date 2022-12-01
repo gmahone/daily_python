@@ -1,4 +1,4 @@
 class Solution:
   def main(self):
-    print("Hello World!\n")
+    print("Hello World!")
     pass
