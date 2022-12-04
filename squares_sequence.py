@@ -7,3 +7,6 @@ def squares(x: int, n: int) -> list[int]:
         x = x*x
     return result
     
+## list comprehension solution
+def squares(x,n):
+    return [x**(2**i) for i in range(n)]
