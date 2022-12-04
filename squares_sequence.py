@@ -1,2 +1,5 @@
 def squares(x: int, n: int) -> list[int]:
-    pass
+    result = []
+    if n <= 0:
+        return result
+    
