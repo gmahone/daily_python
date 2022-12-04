@@ -1,2 +1,2 @@
-def squares(x: int, n: int):
+def squares(x: int, n: int) -> list[int]:
     pass
