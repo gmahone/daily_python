@@ -4,3 +4,8 @@ def discover_original_price(discounted_price, sale_percentage):
     result = discounted_price/price_decimal
     rounded_result = round(result, 2)
     return rounded_result
+
+
+# short solution
+def discover_original_price(discounted_price, sale_percentage):
+    return round(discounted_price / ((100 - sale_percentage) * 0.01), 2)
