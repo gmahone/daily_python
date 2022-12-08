@@ -4,7 +4,9 @@ class Node(object):
         self.next = None
     
 def length(node):
-    # Your code goes here.
+    print(node)
+    pass
   
 def count(node, data):
-    # Your code goes here.
+    print(node)
+    pass
