@@ -15,4 +15,12 @@ def length(node):
 def count(node, data):
     if node is None:
         return 0
-    pass
+    tmp_count = 0
+    while True:
+        if node.data == data:
+            tmp_count += 1 
+        if node.next is not None:
+            node = node.next
+        else:
+            break
+    return tmp_count
