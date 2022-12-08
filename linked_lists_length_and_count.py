@@ -6,12 +6,11 @@ class Node(object):
 def length(node):
     if node is None:
         return 0
-    length = 0
+    length = 1
     while node.next is not None:
-        length += 1
         node = node.next
-    print(length)
-    pass
+        length += 1
+    return length
   
 def count(node, data):
     print(node)
