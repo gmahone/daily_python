@@ -13,5 +13,6 @@ def length(node):
     return length
   
 def count(node, data):
-    print(node)
+    if node is None:
+        return 0
     pass
