@@ -1,2 +1,3 @@
 def average(array):
-    pass
+    result = sum(array) / len(array)
+    return result
