@@ -1,1 +1,2 @@
-
+def average(array):
+    pass
