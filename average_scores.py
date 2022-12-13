@@ -6,3 +6,9 @@ def average(array):
 # less readible
 def average(array):
     return round(sum(array) / len(array))
+
+# cheating and importing mean
+from statistics import mean
+
+def average(array):
+    return round(mean(array))
