@@ -29,5 +29,5 @@ leet_dict = {
 
 def to_leet_speak(str):
     for key, value in leet_dict.items():
-        print(key, value)
+        str = value.join(str.split(key))  
     pass
