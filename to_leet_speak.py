@@ -22,3 +22,10 @@ def to_leet_speak(str):
 # solution using translate
 def to_leet_speak(str):
     return str.translate(str.maketrans("ABCEGHILOSTZ", "@8(36#!10$72"))
+
+  
+# solution using replace
+def to_leet_speak(str):
+    for key in leet_dict:
+        str = str.replace(key, leet_dict[key])
+    return str
