@@ -18,3 +18,8 @@ def find_children(dancing_brigade):
     tmp_title = " ".join(tmp_list).title()
     result = "".join(tmp_title.split(" "))
     return result
+
+
+# solution using sorting lambda func
+def find_children(dancing_brigade):
+    return ''.join(sorted(dancing_brigade,key=lambda c:(c.upper(),c.islower())))
