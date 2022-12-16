@@ -23,3 +23,15 @@ def find_children(dancing_brigade):
 # solution using sorting lambda func
 def find_children(dancing_brigade):
     return ''.join(sorted(dancing_brigade,key=lambda c:(c.upper(),c.islower())))
+
+
+# standard looping
+def find_children(string):
+    tmp_list = []
+    string = sorted(string.lower())
+    for i in string:
+        if i.upper() not in tmp_list:
+            tmp_list.append(i.upper())
+        else:
+            tmp_list.append(i)
+    return ''.join(tmp_list)
