@@ -12,4 +12,6 @@ def find_children(dancing_brigade):
             tmp_list.append(curr_item)
             curr_item = tmp_next
     tmp_list.append(curr_item)
-    print(tmp_list)
+    tmp_title = " ".join(tmp_list).title()
+    result = "".join(tmp_title.split(" "))
+    return result
