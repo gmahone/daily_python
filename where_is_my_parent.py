@@ -1,4 +1,6 @@
 def find_children(dancing_brigade):
+    if not len(dancing_brigade):
+        return ""
     list_input = list(dancing_brigade.lower())
     list_input = sorted(list_input)
     tmp_list = []
