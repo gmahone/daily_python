@@ -1,2 +1,4 @@
 def find_children(dancing_brigade):
-	pass
+    list_input = list(dancing_brigade)
+    list_input = sorted(list_input)
+    return list_input
