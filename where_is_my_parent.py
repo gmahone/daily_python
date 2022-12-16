@@ -10,6 +10,8 @@ def find_children(dancing_brigade):
         tmp_next = list_input[i+1]
         if(tmp_current == tmp_next):
             curr_item += tmp_next
+        elif i == 0:
+            curr_item = tmp_next
         else:
             tmp_list.append(curr_item)
             curr_item = tmp_next
