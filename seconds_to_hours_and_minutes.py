@@ -12,3 +12,10 @@ def to_time(seconds):
 # solution using .format
 def to_time(seconds):
     return '{} hour(s) and {} minute(s)'.format(seconds//3600,(seconds%3600)//60)
+
+
+# using divmod
+def to_time(seconds):
+    m, s = divmod(seconds, 60)
+    h, m = divmod(m, 60)
+    return f'{h} hour(s) and {m} minute(s)'
