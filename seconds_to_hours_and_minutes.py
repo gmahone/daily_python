@@ -3,4 +3,4 @@ def to_time(seconds):
     minutes = seconds % (60*60) // 60
     print(hours)
     print(minutes)
-    result f"{hours} hour(s) and {minutes} minute(s)"
+    return f"{hours} hour(s) and {minutes} minute(s)"
