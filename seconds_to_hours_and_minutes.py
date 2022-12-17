@@ -7,3 +7,8 @@ def to_time(seconds):
 # alternative
 def to_time(seconds):
     return f'{seconds//3600} hour(s) and {(seconds//60)%60} minute(s)'
+
+
+# solution using .format
+def to_time(seconds):
+    return '{} hour(s) and {} minute(s)'.format(seconds//3600,(seconds%3600)//60)
