@@ -10,3 +10,7 @@ def merge_arrays(arr1, arr2):
 # using set
 def merge_arrays(arr1, arr2):
     return sorted(set(arr1+arr2))
+
+
+# as a lambda function
+merge_arrays = lambda a, b: sorted(list(set(a + b)))
