@@ -4,5 +4,4 @@ def queue_time(customers, n):
         shortest_length = min(queue_list)
         shortest_line = queue_list.index(shortest_length)
         queue_list[shortest_line] += customer
-    print(queue_list)
-    pass
+    return min(queue_list)
