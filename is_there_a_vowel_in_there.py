@@ -14,3 +14,8 @@ def is_vow(inp):
 # solution using chr()
 def is_vow(inp):
     return [chr(n) if chr(n) in "aeiou" else n for n in inp]
+
+# solution using get
+def is_vow(s):
+    vowels = {97: 'a', 111: 'o', 117: 'u', 101: 'e', 105: 'i'}
+    return [vowels.get(a, a) for a in s]
