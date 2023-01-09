@@ -9,3 +9,8 @@ def is_vow(inp):
         while charcode in inp:
             inp[inp.index(charcode)] = vowel
     return inp
+
+
+# solution using chr()
+def is_vow(inp):
+    return [chr(n) if chr(n) in "aeiou" else n for n in inp]
