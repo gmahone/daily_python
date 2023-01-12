@@ -1,1 +1,2 @@
-
+def playerRankUp(pts):
+     pass
