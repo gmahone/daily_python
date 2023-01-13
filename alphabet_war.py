@@ -10,6 +10,11 @@ def alphabet_war(fight):
     for key, value in right_score_dict.items():
         right_side_score += fight.count(key) * value
     
-    print(left_side_score)
-    print(right_side_score)
-    pass
+    if left_side_score > right_side_score:
+        result = "Left side wins!"
+    else if right_side_score > left_side_score:
+        result = "Right side wins!"
+    else:
+        result = "Let's fight again!"
+    
+    return result
