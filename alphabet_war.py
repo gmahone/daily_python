@@ -3,4 +3,8 @@ def alphabet_war(fight):
     right_score_dict = {"m" : 4, "q" : 3, "d" : 2, "z" : 1}
     
     left_side_score = right_side_score = 0
+    
+    for key, value in left_score_dict.items():
+        left_side_score += fight.count(key) * value
+        
     pass
