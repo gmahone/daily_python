@@ -12,7 +12,7 @@ def alphabet_war(fight):
     
     if left_side_score > right_side_score:
         result = "Left side wins!"
-    else if right_side_score > left_side_score:
+    elif right_side_score > left_side_score:
         result = "Right side wins!"
     else:
         result = "Let's fight again!"
