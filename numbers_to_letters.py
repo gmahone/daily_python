@@ -30,5 +30,4 @@ def switcher(arr):
         "28": "?",
         "29": " "
     }
-    print([translation_dict[i] for i in arr])
-    pass
+    return "".join([translation_dict[i] for i in arr])
