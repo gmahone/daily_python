@@ -1,1 +1,2 @@
-
+def switcher(arr):
+    pass
