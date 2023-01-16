@@ -1,4 +1,7 @@
 def vaporcode(s):
-    letter_list = list(s.split())
+    word_list = s.split()
+    letter_list = []
+    for word in word_list:
+        letter_list += list(word.upper())
     print(letter_list)
     pass
