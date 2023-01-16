@@ -1,1 +1,2 @@
-
+def vaporcode(s):
+    pass
