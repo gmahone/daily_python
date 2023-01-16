@@ -4,3 +4,8 @@ def vaporcode(s):
     for word in word_list:
         letter_list += list(word.upper())
     return "  ".join(letter_list)
+
+
+# solution that replaces spaces
+def vaporcode(s):
+    return "  ".join(s.replace(" ", "").upper())
