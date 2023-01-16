@@ -9,3 +9,8 @@ def vaporcode(s):
 # solution that replaces spaces
 def vaporcode(s):
     return "  ".join(s.replace(" ", "").upper())
+
+
+# loop over non-spaces
+def vaporcode(s):
+    return '  '.join(i.upper() for i in s if i!=' ')
