@@ -3,5 +3,4 @@ def vaporcode(s):
     letter_list = []
     for word in word_list:
         letter_list += list(word.upper())
-    print(letter_list)
-    pass
+    return "  ".join(letter_list)
