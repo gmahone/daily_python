@@ -12,3 +12,6 @@ class Block:
     
     def get_height(self):
         return self.height
+    
+    def get_volume(self):
+        return self.width * self.length * self.height
