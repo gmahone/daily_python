@@ -15,3 +15,9 @@ class Block:
     
     def get_volume(self):
         return self.width * self.length * self.height
+
+    def get_surface_area(self):
+        front_back = 2 * self.length * self.height
+        left_right = 2 * self.width * self.height
+        top_bottom = 2 * self.width * self.length
+        return front_back + left_right + top_bottom
