@@ -14,5 +14,8 @@ def boredom(staff):
     score = 0
     for department in staff.values():
         score += assessment_score[department]
-    print(score)
-    pass
+    if score > 100:
+        return "party time!!"
+    elif score > 80:
+        return "i can handle this"
+    else return "kill me now"
