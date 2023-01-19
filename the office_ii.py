@@ -11,4 +11,5 @@ def boredom(staff):
         "cleaning": 4,
         "pissing about": 25,    
     }
+    print(staff.values())
     pass
