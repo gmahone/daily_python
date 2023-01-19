@@ -18,4 +18,5 @@ def boredom(staff):
         return "party time!!"
     elif score > 80:
         return "i can handle this"
-    else return "kill me now"
+    else:
+        return "kill me now"
