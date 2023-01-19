@@ -11,5 +11,8 @@ def boredom(staff):
         "cleaning": 4,
         "pissing about": 25,    
     }
-    print(staff.values())
+    score = 0
+    for department in staff.values():
+        score += assessment_score[department]
+    print(score)
     pass
