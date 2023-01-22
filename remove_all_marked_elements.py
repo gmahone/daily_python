@@ -1,4 +1,7 @@
 class List:
     def remove_(self, integer_list, values_list):
-        #your code here
-        return []
+        result = []
+        for i in integer_list:
+            for i not in values_list:
+                result.append(i)
+        return result
