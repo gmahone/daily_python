@@ -3,5 +3,6 @@ def paint_letterboxes(start, finish):
     concat_numbers = ""
     for i in number_list:
         concat_numbers += str(i)
-    print(concat_numbers)
+    result = [concat_numbers.count(str(n)) for n in range(0,10)]
+    print(result)
     pass
