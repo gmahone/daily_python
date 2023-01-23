@@ -1,1 +1,2 @@
-
+def evil(n):
+    pass
