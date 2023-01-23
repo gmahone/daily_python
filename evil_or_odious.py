@@ -4,3 +4,7 @@ def evil(n):
         return "It's Odious!"
     else:
         return "It's Evil!"
+
+# another solution
+def evil(n):
+    return "It's Evil!" if  bin(n).count('1')%2 == 0 else "It's Odious!"
