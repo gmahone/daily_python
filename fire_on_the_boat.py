@@ -1,3 +1,2 @@
 def fire_fight(s):
-    print("~~".join(s.split("Fire")))
-    pass
+    return "~~".join(s.split("Fire"))
