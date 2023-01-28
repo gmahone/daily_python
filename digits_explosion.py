@@ -1,1 +1,2 @@
-
+def explode(s):
+    pass
