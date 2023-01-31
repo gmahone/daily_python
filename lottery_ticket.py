@@ -5,5 +5,4 @@ def bingo(ticket,win):
             if ord(j) == i[1]:
                 mini_wins += 1
                 break
-        print(mini_wins)
-    pass
+    return "Winner!" if mini_wins >= win else "Loser!"
