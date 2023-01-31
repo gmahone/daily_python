@@ -1,3 +1,3 @@
 def max_product(lst, n_largest_elements):
-    print(sorted(list))
+    print(sorted(lst, reverse=True))
     pass
