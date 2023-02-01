@@ -4,6 +4,8 @@ class Guesser:
         self.lives = lives
   
     def guess(self,n):
+        if self.lives <= 0:
+            raise ValueError
         if n == self.number:
             return True
         else:
