@@ -1,3 +1,4 @@
 def to_nato(words):
-    print(NATO)
+    print("".join(words.split(" ")))
+    #" ".join(NATO.get(x, x) for x in )
     pass
