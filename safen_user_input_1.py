@@ -14,3 +14,8 @@ def html_special_chars(data):
 # one line replace
 def html_special_chars(data): 
     return data.replace('&', "&amp;").replace('>', "&gt;").replace('<', "&lt;").replace('\"', "&quot;")
+
+
+# using translate
+def html_special_chars(data): 
+    return data.translate(str.maketrans({'<':'&lt;','>':'&gt;','"':'&quot;','&':'&amp;'}))
