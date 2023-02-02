@@ -3,5 +3,4 @@ def html_special_chars(data):
     data = data.replace(">", "&gt;")
     data = data.replace('"', '&quot;')
     data = data.replace("&", "&amp;")
-    print(data)
-    pass
+    return data
