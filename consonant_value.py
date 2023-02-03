@@ -37,5 +37,4 @@ def solve(s):
     for consonant_group in s_list:
         score = [score_dict.get(consonant) for consonant in consonant_group]
         result_list.append(sum(score))
-    print(result_list)
-    pass
+    return max(result_list)
