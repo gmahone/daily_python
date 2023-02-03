@@ -30,6 +30,8 @@ def solve(s):
     
     for vowel in aeiou:
         s = s.replace(vowel, "_")
-    print(s)
+    
+    s_list = s.split("_")
+    print(s_list)
     
     pass
