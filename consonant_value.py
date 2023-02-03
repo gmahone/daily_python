@@ -28,10 +28,14 @@ def solve(s):
         "z" : 26
     }
     
-    for vowel in aeiou:
+    for vowel in "aeiou":
         s = s.replace(vowel, "_")
     
     s_list = s.split("_")
-    print(s_list)
     
+    result_list = []
+    for consonant_group in s_list:
+        score = [score_dict.get(consonant) for consonant in consonant_group]
+        result_list.append(sum(score))
+    print(result_list)
     pass
