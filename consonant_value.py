@@ -28,4 +28,8 @@ def solve(s):
         "z" : 26
     }
     
+    for vowel in aeiou:
+        s = s.replace(vowel, "_")
+    print(s)
+    
     pass
