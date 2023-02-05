@@ -15,3 +15,14 @@ def flatten(lst):
     except: 
         result = lst
     return result
+
+# another solution
+def flatten(lst):
+    result = []
+    for i in lst:
+        if isinstance(i, list):
+            result = result + i
+        else:
+            result.append(i)
+    print(result)
+    pass
