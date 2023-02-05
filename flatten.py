@@ -1,6 +1,6 @@
 def flatten(lst):
     result = []
     for i in lst:
-        result += i
+        result.extend(i)
     print(result)
     pass
