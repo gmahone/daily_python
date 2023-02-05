@@ -36,3 +36,7 @@ def flatten(lst):
        else:
           r.append(x)
     return r 
+
+# list comprehension
+def flatten(lst):
+    return sum(([i] if not isinstance(i, list) else i for i in lst), [])
