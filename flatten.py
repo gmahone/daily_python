@@ -1,6 +1,8 @@
 def flatten(lst):
     result = []
-    for i in lst:
-        result.extend(i)
+    print(len(lst))
+    for sub_lst in range(len(lst)):
+        print(sub_lst)
+        result.append(lst[sub_lst])
     print(result)
     pass
