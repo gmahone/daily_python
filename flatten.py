@@ -24,5 +24,4 @@ def flatten(lst):
             result = result + i
         else:
             result.append(i)
-    print(result)
-    pass
+    return result
