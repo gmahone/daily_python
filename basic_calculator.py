@@ -12,5 +12,4 @@ def calculate(num1, operation, num2):
             result = None
     else:
         result = None
-    print(result)
-    pass
+    return result
