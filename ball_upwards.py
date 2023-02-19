@@ -14,3 +14,8 @@ def max_ball(v0):
             height = curr_height
         else:
             return round((time-0.1)*10)
+
+        
+# formulaic solution
+def max_ball(v0):
+    return round(10*v0/9.81/3.6)
