@@ -4,7 +4,6 @@ def calc_height(v, t):
 
 def max_ball(v0):
     v0 = v0 * 1000 / 3600
-    print(v0)
     height = 0
     time = 0.0
     while True:
