@@ -3,4 +3,4 @@ def switcheroo(s):
     s = "a".join(s.split("b"))
     s = "b".join(s.split("_"))
     print(s)
-    pass
+    return s
