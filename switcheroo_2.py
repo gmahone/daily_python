@@ -7,3 +7,7 @@ def switcheroo(s):
 # using translate
 def switcheroo(s):
     return s.translate(str.maketrans('ab','ba'))
+
+# using replace
+def switcheroo(string):
+    return ((string.replace('a','x')).replace('b','a')).replace('x','b')
