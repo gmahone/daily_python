@@ -1,1 +1,2 @@
-
+def switcheroo(s):
+    pass
