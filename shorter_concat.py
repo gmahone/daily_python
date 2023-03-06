@@ -5,5 +5,4 @@ def shorter_reverse_longer(a,b):
     longer = b
     shorter = a
   result = shorter + longer[::-1] + shorter
-  print(result)
-  pass
+  return result
