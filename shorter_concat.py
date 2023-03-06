@@ -4,4 +4,6 @@ def shorter_reverse_longer(a,b):
   if len(b) > len(a):
     longer = b
     shorter = a
+  result = shorter + rev(longer) + shorter
+  print(result)
   pass
