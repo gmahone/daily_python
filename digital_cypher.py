@@ -7,3 +7,10 @@ def encode(message, key):
         key_val = key_cycle[i]
         result_list.append(base_val + key_val)
     return result_list
+
+
+# solution using zip
+from itertools import cycle
+
+def encode(message, key):
+    return [ord(a) - 96 + int(b) for a,b in zip(message,cycle(str(key)))]
