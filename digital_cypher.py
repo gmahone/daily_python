@@ -6,10 +6,4 @@ def encode(message, key):
         base_val = code_string.index(message[i])
         key_val = key_cycle[i]
         result_list.append(base_val + key_val)
-        print(base_val)
-        print(key_val)
-        print(result_list)
-    pass
-                           
-        
-        
+    return result_list
