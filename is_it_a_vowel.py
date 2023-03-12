@@ -1,2 +1,5 @@
 def is_vowel(s): 
-    return s in 'aeiouAEIOU'
+    if len(s) != 1:
+        return FALSE
+    else:
+        return s in 'aeiouAEIOU'
