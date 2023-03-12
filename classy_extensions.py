@@ -10,3 +10,8 @@ class Cat(Animal):
 class Cat(Animal):
     def speak(self):
         return self.name + ' meows.'
+
+# using string formatting
+class Cat(Animal):   
+    def speak(self):
+        return '{} meows.'.format(self.name)
