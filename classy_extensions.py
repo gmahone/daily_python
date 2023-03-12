@@ -15,3 +15,11 @@ class Cat(Animal):
 class Cat(Animal):   
     def speak(self):
         return '{} meows.'.format(self.name)
+
+    
+# using an init method
+class Cat(Animal):
+    def __init__(self, name):
+        self.name = name
+    def speak(self):
+        return '{} meows.'.format(self.name)
