@@ -1,2 +1,2 @@
 def is_vowel(s): 
-    pass
+    return s in 'aeiouAEIOU'
