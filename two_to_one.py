@@ -5,3 +5,7 @@ def longest(a1, a2):
         if i not in result:
             result += i
     return "".join(sorted(result))
+
+## solution using set
+def longest(a1, a2):
+    return "".join(sorted(set(a1 + a2)))
